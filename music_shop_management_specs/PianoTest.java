@@ -16,4 +16,29 @@ public class PianoTest {
     assertEquals("string", piano.getType());
   }
 
+  @Test
+  public void hasMaterial() {
+    assertEquals("beech", piano.getMaterial());
+  }
+
+  @Test
+  public void hasColour() {
+    assertEquals("black", piano.getColour());
+  }
+
+  @Test
+  public void knowsIfGrand() {
+    assertEquals(true, piano.isGrand());
+  }
+
+  @Test
+  public void hasBuyPrice() {
+    assertEquals(1750.00, piano.getBuyPrice(), .01);
+  }
+
+  @Test
+  public void hasSellPrice() {
+    assertEquals(2000.00, piano.getSellPrice(), .01);
+  }
+
 }
