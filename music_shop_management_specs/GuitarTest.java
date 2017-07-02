@@ -16,4 +16,24 @@ public class GuitarTest {
     assertEquals("string", guitar.getType());
   }
 
+  @Test
+  public void hasMaterial() {
+    assertEquals("plastic", guitar.getMaterial());
+  }
+
+  @Test
+  public void hasColour() {
+    assertEquals("green", guitar.getColour());
+  }
+
+  @Test
+  public void hasBuyPrice() {
+    assertEquals(500.00, guitar.getBuyPrice(), .01);
+  }
+
+  @Test
+  public void hasSellPrice() {
+    assertEquals(600.50, guitar.getSellPrice(), .01);
+  }
+
 }

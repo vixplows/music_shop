@@ -16,4 +16,30 @@ public class FluteTest {
     assertEquals("woodwind", flute.getType());
   }
 
+
+  @Test
+  public void hasMaterial() {
+    assertEquals("metal", flute.getMaterial());
+  }
+
+  @Test
+  public void hasColour() {
+    assertEquals("gold", flute.getColour());
+  }
+
+  @Test
+  public void hasVariant() {
+    assertEquals("western", flute.getVariant());
+  }
+
+  @Test
+  public void hasBuyPrice() {
+    assertEquals(100.00, flute.getBuyPrice(), .01);
+  }
+
+  @Test
+  public void hasSellPrice() {
+    assertEquals(125.00, flute.getSellPrice(), .01);
+  }
+
 }
