@@ -15,16 +15,24 @@ public class Shop {
     return this.name;
   }
 
-  public void addStock (Sellable stockItem) {
+  public void addStock(Sellable stockItem) {
     stock.add(stockItem);
   }
 
-  public void removeStock (Sellable stockItem) {
+  public void removeStock(Sellable stockItem) {
     stock.remove(stockItem);
   }
 
-  public int countStock () {
+  public int countStock() {
     return stock.size();
   }
+
+  public double getTotalPotentialProfit() {
+    double totalMarkUp = 0;
+    for(Sellable stockItem : stock) {
+      totalMarkUp += stockItem.calculateMarkUp();
+    }
+      return totalMarkUp;
+    }
 
 }
