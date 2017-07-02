@@ -11,4 +11,8 @@ public class Flute extends Instrument implements Playable, Sellable {
     
   }
 
+  public String getType() {
+    return this.type;
+  }
+
 }

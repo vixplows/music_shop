@@ -3,12 +3,16 @@ import behaviours.*;
 
 public class Piano extends Instrument implements Playable, Sellable {
 
-  private int numberOfKeys;
+  private boolean grand;
 
-  public Piano(String type, String material, String colour, int numberOfKeys, double buyPrice, double sellPrice) {
+  public Piano(String type, String material, String colour, boolean grand, double buyPrice, double sellPrice) {
     super(type, material, colour, buyPrice, sellPrice);
-    this.numberOfKeys = numberOfKeys;
+    this.grand = grand;
     
   }
 
+  public String getType() {
+    return this.type;
+  }
+  
 }
