@@ -32,4 +32,9 @@ public class Guitar extends Instrument implements Playable, Sellable {
     return "Guitar, guitar";
   }
 
+  public double calculateMarkUp() {
+    double markUp = this.sellPrice - this.buyPrice;
+    return markUp;
+  }
+
 }

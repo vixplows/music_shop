@@ -26,5 +26,9 @@ public class MusicStandTest {
     assertEquals(10.00, musicStand.getSellPrice(), .01);
   }
 
+  @Test
+  public void canCalculateMarkUp() {
+    assertEquals(1.50, musicStand.calculateMarkUp(), 01);
+  }
 
 }

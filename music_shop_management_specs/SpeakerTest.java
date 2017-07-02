@@ -26,5 +26,9 @@ public class SpeakerTest {
     assertEquals(25.00, speaker.getSellPrice(), .01);
   }
 
+  @Test
+  public void canCalculateMarkUp() {
+    assertEquals(5.00, speaker.calculateMarkUp(), 01);
+  }
 
 }

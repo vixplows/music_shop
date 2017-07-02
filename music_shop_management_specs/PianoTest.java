@@ -46,4 +46,9 @@ public class PianoTest {
     assertEquals("Tinkle, tinkle, melody", piano.play());
   }
 
+  @Test
+  public void canCalculateMarkUp() {
+    assertEquals(250.00, piano.calculateMarkUp(), 01);
+  }
+
 }

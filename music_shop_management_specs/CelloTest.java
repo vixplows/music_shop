@@ -48,5 +48,9 @@ public class CelloTest {
     assertEquals("Deep sounds", cello.play());
   }
 
+  @Test
+  public void canCalculateMarkUp() {
+    assertEquals(99.99, cello.calculateMarkUp(), 01);
+  }
 
 }

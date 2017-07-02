@@ -38,5 +38,10 @@ public class Piano extends Instrument implements Playable, Sellable {
   public String play() {
     return "Tinkle, tinkle, melody";
   }
+
+  public double calculateMarkUp() {
+    double markUp = this.sellPrice - this.buyPrice;
+    return markUp;
+  }
   
 }

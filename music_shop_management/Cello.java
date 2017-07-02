@@ -37,6 +37,11 @@ public class Cello extends Instrument implements Playable, Sellable {
   public String play() {
     return "Deep sounds";
   }
+
+  public double calculateMarkUp() {
+    double markUp = this.sellPrice - this.buyPrice;
+    return markUp;
+  }
   
 
 }

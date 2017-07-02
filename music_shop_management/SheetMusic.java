@@ -19,4 +19,9 @@ public class SheetMusic extends Accessory implements Sellable {
     return this.sellPrice;
   }
 
+  public double calculateMarkUp() {
+    double markUp = this.sellPrice - this.buyPrice;
+    return markUp;
+  }
+
 }

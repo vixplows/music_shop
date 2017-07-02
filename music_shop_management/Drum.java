@@ -39,4 +39,9 @@ public class Drum extends Instrument implements Playable, Sellable {
     return "Beat it";
   }
 
+  public double calculateMarkUp() {
+    double markUp = this.sellPrice - this.buyPrice;
+    return markUp;
+  }
+
 }

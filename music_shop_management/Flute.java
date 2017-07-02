@@ -39,4 +39,9 @@ public class Flute extends Instrument implements Playable, Sellable {
     return "Soft and sweet";
   }
 
+  public double calculateMarkUp() {
+    double markUp = this.sellPrice - this.buyPrice;
+    return markUp;
+  }
+
 }

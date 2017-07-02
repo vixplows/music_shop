@@ -48,5 +48,9 @@ public class FluteTest {
     assertEquals("Soft and sweet", flute.play());
   }
 
+  @Test
+  public void canCalculateMarkUp() {
+    assertEquals(25.00, flute.calculateMarkUp(), 01);
+  }
 
 }
