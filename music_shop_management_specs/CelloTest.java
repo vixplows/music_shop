@@ -42,4 +42,11 @@ public class CelloTest {
     assertEquals(699.99, cello.getSellPrice(), .01);
   }
 
+
+  @Test
+  public void hasPlaySound() {
+    assertEquals("Deep sounds", cello.play());
+  }
+
+
 }

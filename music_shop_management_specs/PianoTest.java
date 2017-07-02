@@ -41,4 +41,9 @@ public class PianoTest {
     assertEquals(2000.00, piano.getSellPrice(), .01);
   }
 
+  @Test
+  public void hasPlaySound() {
+    assertEquals("Tinkle, tinkle, melody", piano.play());
+  }
+
 }

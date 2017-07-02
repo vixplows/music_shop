@@ -42,4 +42,11 @@ public class FluteTest {
     assertEquals(125.00, flute.getSellPrice(), .01);
   }
 
+
+  @Test
+  public void hasPlaySound() {
+    assertEquals("Soft and sweet", flute.play());
+  }
+
+
 }

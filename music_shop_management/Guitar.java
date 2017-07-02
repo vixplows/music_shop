@@ -28,4 +28,8 @@ public class Guitar extends Instrument implements Playable, Sellable {
     return this.sellPrice;
   }
 
+  public String play() {
+    return "Guitar, guitar";
+  }
+
 }

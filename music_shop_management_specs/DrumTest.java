@@ -42,4 +42,11 @@ public class DrumTest {
     assertEquals(250.00, drum.getSellPrice(), .01);
   }
 
+
+  @Test
+  public void hasPlaySound() {
+    assertEquals("Beat it", drum.play());
+  }
+
+
 }

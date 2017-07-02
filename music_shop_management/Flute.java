@@ -35,4 +35,8 @@ public class Flute extends Instrument implements Playable, Sellable {
     return this.sellPrice;
   }
 
+  public String play() {
+    return "Soft and sweet";
+  }
+
 }
