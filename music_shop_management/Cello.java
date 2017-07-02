@@ -14,4 +14,25 @@ public class Cello extends Instrument implements Playable, Sellable {
     return this.type;
   }
 
+  public String getMaterial() {
+    return this.material;
+  }
+
+  public String getColour() {
+    return this.colour;
+  }
+
+  public String getSize() {
+    return this.size;
+  }
+
+  public double getBuyPrice() {
+    return this.buyPrice;
+  }
+
+  public double getSellPrice() {
+    return this.sellPrice;
+  }
+  
+
 }
