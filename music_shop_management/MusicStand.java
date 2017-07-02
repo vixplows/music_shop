@@ -7,4 +7,16 @@ public class MusicStand extends Accessory implements Sellable {
     super(type, buyPrice, sellPrice);
   }
 
+  public String getType() {
+    return this.type;
+  }
+
+  public double getBuyPrice() {
+    return this.buyPrice;
+  }
+
+  public double getSellPrice() {
+    return this.sellPrice;
+  }
+
 }
