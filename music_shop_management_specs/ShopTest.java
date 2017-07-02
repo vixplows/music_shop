@@ -28,10 +28,16 @@ public class ShopTest {
     assertEquals(0, shop.countStock());
   }
 
-  // @Test
-  // public void canAddStock() {
-  //   shop.addStock(cello);
-  //   assertEquals(1, )
-  // }
+  @Test
+  public void canAddStock() {
+    shop.addStock(cello);
+    assertEquals(1, shop.countStock());
+  }
 
+  @Test
+  public void canRemoveStock() {
+    shop.addStock(cello);
+    shop.removeStock(cello);
+    assertEquals(0, shop.countStock());
+  }
 }
