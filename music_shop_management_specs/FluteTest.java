@@ -8,12 +8,12 @@ public class FluteTest {
 
   @Before
   public void before() {
-    flute = new Flute("woodwind", "metal", "gold", "western", 100.00, 125.00);
+    flute = new Flute(InstrumentType.WOODWIND, "metal", "gold", "western", 100.00, 125.00);
   }
 
   @Test
   public void hasType() {
-    assertEquals("woodwind", flute.getType());
+    assertEquals(InstrumentType.WOODWIND, flute.getType());
   }
 
 

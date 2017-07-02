@@ -8,12 +8,12 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano = new Piano("string", "beech", "black", true, 1750.00, 2000.00);
+    piano = new Piano(InstrumentType.STRING, "beech", "black", true, 1750.00, 2000.00);
   }
 
   @Test
   public void hasType() {
-    assertEquals("string", piano.getType());
+    assertEquals(InstrumentType.STRING, piano.getType());
   }
 
   @Test

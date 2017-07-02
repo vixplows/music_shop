@@ -8,12 +8,12 @@ public class CelloTest {
 
   @Before
   public void before() {
-    cello = new Cello("string", "wood", "brown", "full", 600.00, 699.99);
+    cello = new Cello(InstrumentType.STRING, "wood", "brown", "full", 600.00, 699.99);
   }
 
   @Test
   public void hasType() {
-    assertEquals("string", cello.getType());
+    assertEquals(InstrumentType.STRING, cello.getType());
   }
 
 

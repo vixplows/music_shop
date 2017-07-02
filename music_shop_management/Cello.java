@@ -5,12 +5,12 @@ public class Cello extends Instrument implements Playable, Sellable {
 
   private String size;
 
-  public Cello(String type, String material, String colour, String size, double buyPrice, double sellPrice) {
+  public Cello(InstrumentType type, String material, String colour, String size, double buyPrice, double sellPrice) {
     super(type, material, colour, buyPrice, sellPrice);
     this.size = size;
   }
 
-  public String getType() {
+  public InstrumentType getType() {
     return this.type;
   }
 

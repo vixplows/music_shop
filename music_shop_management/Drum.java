@@ -5,13 +5,13 @@ public class Drum extends Instrument implements Playable, Sellable {
 
   private int drumHead;
 
-  public Drum(String type, String material, String colour, int drumHead, double buyPrice, double sellPrice) {
+  public Drum(InstrumentType type, String material, String colour, int drumHead, double buyPrice, double sellPrice) {
     super(type, material, colour, buyPrice, sellPrice);
     this.drumHead = drumHead;
     
   }
 
-  public String getType() {
+  public InstrumentType getType() {
     return this.type;
   }
 

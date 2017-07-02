@@ -8,12 +8,12 @@ public class DrumTest {
 
   @Before
   public void before() {
-    drum = new Drum("percussion", "skin", "red", 2, 200.00, 250.00);
+    drum = new Drum(InstrumentType.PERCUSSION, "skin", "red", 2, 200.00, 250.00);
   }
 
   @Test
   public void hasType() {
-    assertEquals("percussion", drum.getType());
+    assertEquals(InstrumentType.PERCUSSION, drum.getType());
   }
 
 

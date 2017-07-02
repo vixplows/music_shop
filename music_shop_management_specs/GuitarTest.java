@@ -8,12 +8,12 @@ public class GuitarTest {
 
   @Before
   public void before() {
-    guitar = new Guitar("string", "plastic", "green", 500.00, 600.50);
+    guitar = new Guitar(InstrumentType.STRING, "plastic", "green", 500.00, 600.50);
   }
 
   @Test
   public void hasType() {
-    assertEquals("string", guitar.getType());
+    assertEquals(InstrumentType.STRING, guitar.getType());
   }
 
   @Test

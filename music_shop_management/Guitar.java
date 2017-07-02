@@ -3,12 +3,12 @@ import behaviours.*;
 
 public class Guitar extends Instrument implements Playable, Sellable {
 
-  public Guitar(String type, String material, String colour, double buyPrice, double sellPrice) {
+  public Guitar(InstrumentType type, String material, String colour, double buyPrice, double sellPrice) {
     super(type, material, colour, buyPrice, sellPrice);
     
   }
 
-  public String getType() {
+  public InstrumentType getType() {
     return this.type;
   }
 

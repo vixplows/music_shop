@@ -5,13 +5,13 @@ public class Flute extends Instrument implements Playable, Sellable {
 
   private String variant;
 
-  public Flute(String type, String material, String colour, String variant, double buyPrice, double sellPrice) {
+  public Flute(InstrumentType type, String material, String colour, String variant, double buyPrice, double sellPrice) {
     super(type, material, colour, buyPrice, sellPrice);
     this.variant = variant;
     
   }
 
-  public String getType() {
+  public InstrumentType getType() {
     return this.type;
   }
 
